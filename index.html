@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Аня Константинова — нутрициолог</title>
+<style>
+:root{--bg:#f8f5ee;--card:#fbfaf6;--green:#075b50;--text:#30434a;--line:#e7e2d8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);font-family:Calibri,Arial,sans-serif;color:var(--text);line-height:1.42}
+.wrap{max-width:1120px;margin:auto;padding:0 28px}
+
+/* HERO: two real columns. Text can never overlap photo. */
+.hero{background:var(--bg)}
+.hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:54% 46%;height:350px}
+.hero-copy{padding:24px 30px 24px 28px;display:flex;flex-direction:column;justify-content:flex-start}
+.kicker{font-size:18px;margin-bottom:2px}.name{font-size:29px;font-weight:700;color:#103f39;margin-bottom:34px}
+h1{font-size:42px;line-height:1.05;color:var(--green);margin:0 0 24px;max-width:480px}
+.hero-copy p{font-size:19px;max-width:445px;margin:0}
+.hero-photo{position:relative;overflow:hidden}
+.hero-photo:before{content:"";position:absolute;z-index:1;inset:0 auto 0 0;width:17%;background:linear-gradient(90deg,var(--bg),rgba(248,245,238,0))}
+.hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 52%;transform:none}
+
+/* ABOUT */
+section{padding-top:38px}h2{font-size:42px;color:var(--green);margin:0 0 14px}
+h3{font-size:28px;color:var(--green);margin:30px 0 8px}.about p{font-size:19px;margin:0 0 14px}
+
+/* MORE */
+.more{margin:34px 0 14px;padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+.more h3{margin:0 0 8px}.more a{display:flex;align-items:center;padding:14px 10px;border-top:1px solid #ece8df;text-decoration:none;color:#183c3a;font-size:18px}
+.more a:first-of-type{border-top:0}.ico{width:38px;height:38px;margin-right:14px;border-radius:50%;background:#efeee5;display:grid;place-items:center;color:var(--green)}
+.arr{margin-left:auto;font-size:27px;color:var(--green)}
+
+/* LOWER CARDS */
+.cards{display:grid;gap:12px;margin:12px 0 34px}
+.card{display:grid;grid-template-columns:34% 1fr 54px;min-height:165px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--card)}
+.visual{background-position:center;background-size:cover;background-repeat:no-repeat;min-height:165px}
+.copy{padding:23px 28px}.copy h3{font-size:27px;margin:0 0 4px}.sub{font-size:17px;margin-bottom:7px}.copy p{font-size:16px;margin:0 0 8px}.copy a{color:var(--green)}
+.go{display:grid;place-items:center;font-size:31px;color:var(--green)}
+footer{border-top:1px solid #ddd8cf;padding:26px 0 34px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.social{display:flex;gap:18px}
+
+/* TABLET */
+@media(max-width:900px) and (min-width:721px){
+.hero-inner{grid-template-columns:52% 48%;height:350px}
+.name{margin-bottom:45px}h1{font-size:37px}.hero-copy p{font-size:17px}
+}
+
+/* MOBILE */
+@media(max-width:720px){
+.wrap{padding:0 18px}.hero-inner{display:flex;flex-direction:column;min-height:0}
+.hero-photo{order:1;height:360px}.hero-photo:before{display:none}
+.hero-photo img{object-position:center 48%}
+.hero-copy{order:2;padding:22px 18px 28px}.name{font-size:25px;margin-bottom:30px}
+h1{font-size:37px}.hero-copy p{font-size:18px}
+h2{font-size:34px}.about p{font-size:18px}
+.card{grid-template-columns:34% 1fr 38px;min-height:135px}.visual{min-height:135px}.copy{padding:15px 12px}.copy h3{font-size:21px}.copy p{display:none}
+.social{width:100%;justify-content:space-between}
+}
+
+/* MOBILE-FIRST OVERRIDES */
+@media(max-width:720px){
+body{overflow-x:hidden}.wrap{padding:0 18px}
+.hero-inner{display:flex;flex-direction:column;height:auto!important;min-height:0!important}
+.hero-copy{display:contents}
+.kicker{order:1;padding:18px 18px 0;font-size:16px}
+.name{order:2;padding:0 18px 14px;font-size:25px;margin:0!important;color:#103f39}
+.hero-photo{order:3;height:315px!important;width:100%;overflow:hidden}
+.hero-photo:before{display:none}
+.hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 46%;transform:none}
+h1{order:4;padding:24px 18px 0;margin:0!important;font-size:34px!important;line-height:1.06;max-width:none}
+.hero-copy p{order:5;padding:16px 18px 28px;margin:0!important;font-size:17px!important;line-height:1.45;max-width:none}
+section{padding-top:30px}h2{font-size:34px;line-height:1.1;margin-bottom:14px}
+h3{font-size:24px;line-height:1.15;margin-top:26px}.about p{font-size:17px;line-height:1.5;margin-bottom:13px}
+.more{margin:28px 0 12px;padding:14px 12px 8px;border-radius:14px}.more h3{font-size:23px;margin:0 4px 8px}
+.more a{min-height:58px;padding:10px 6px;font-size:17px}.ico{width:34px;height:34px;min-width:34px;margin-right:12px}.arr{font-size:23px}
+.cards{gap:14px;margin-top:12px}.card{display:block;min-height:0;border-radius:15px}
+.visual{height:185px!important;min-height:185px!important;width:100%;background-size:cover;background-position:center;background-repeat:no-repeat}
+.copy{padding:17px 18px 19px}.copy h3{font-size:23px;margin:0 0 5px}.sub{font-size:16px;line-height:1.35;margin-bottom:8px}
+.copy p{display:block!important;font-size:15px;line-height:1.4;margin:0 0 10px}.copy a{font-size:15px}.go{display:none}
+footer{padding:24px 0 30px;font-size:14px}.social{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:10px 16px}
+}
+@media(max-width:390px){
+.hero-photo{height:285px!important}h1{font-size:31px!important}.about p{font-size:16.5px}.visual{height:165px!important;min-height:165px!important}
+}
+
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="kicker">Нутрициолог</div>
+      <div class="name">Аня Константинова</div>
+      <h1>Системное омоложение и<br>здоровье организма</h1>
+      <p>Помогаю мягко и осознанно прийти к здоровью, хорошему самочувствию и энергии — без жестких ограничений и сложных схем.</p>
+    </div>
+    <div class="hero-photo">
+      <img src="anya-original.jpeg" alt="Аня Константинова">
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="about" id="about">
+<h2>Обо мне</h2>
+<p>Я — Аня, нутрициолог и healthy-коуч, практикую более 5 лет.</p>
+<p>Эксперт в области <b>LCHF-питания и anti-age менеджмента</b>. Специализируюсь на системном немедикаментозном подходе к восстановлению здоровья, питанию и профилактике заболеваний. Автор методических пособий и статей.</p>
+
+<h3>Мой путь</h3>
+<p>Я сама похудела на <b>25 килограммов</b>, а потом помогла прийти в форму всем своим подругам — и подругам подруг. В общей сложности они стали легче примерно на <b>500 кг</b> :)</p>
+<p>В далёком 2020 году я открыла для себя простой, но очень важный факт: <b>питание — мощный и часто недооценённый инструмент влияния на наше здоровье и самочувствие</b>.</p>
+<p>Я начала глубоко изучать, как всё устроено, и делиться собственным опытом. Сначала вопросами стали интересоваться близкие, затем начали обращаться знакомые — и в какой-то момент увлечение переросло в профессию. Я получила образование нутрициолога и <b>продолжаю учиться</b>.</p>
+<p>С тех пор мои знания и компетенции вышли далеко за пределы LCHF и сегодня системно охватывают основные аспекты питания, метаболического здоровья и <b>долголетия</b>.</p>
+
+<h3>Мой подход</h3>
+<p>Я убеждена, что настоящий профессионализм проявляется не только в дипломах. Для меня это <b>знания, опыт, реальные результаты и искренняя вовлечённость в человека и желание ему помочь</b>.</p>
+<p>Сегодня тема здоровья и питания всё больше напоминает шумный базар, где на каждом углу предлагают очередную «волшебную таблетку».</p>
+<p>Мне ближе другой подход.</p>
+<p><b>Я обращаю внимание на то, что действительно работает, и помогаю выстраивать здоровье на основе продуманного, научно обоснованного и устойчивого подхода.</b></p>
+<p>Здоровье — это процесс, требующий осознанных усилий. И я здесь для тех, кто разделяет эту ценность.</p>
+</section>
+
+<section class="more">
+<h3>Ещё немного обо мне</h3>
+<a href="#"><span class="ico">⌖</span><b>Немного личного</b><span class="arr">→</span></a>
+<a href="#"><span class="ico">⌂</span>Моё образование<span class="arr">→</span></a>
+<a href="#"><span class="ico">♡</span>Мои хобби<span class="arr">→</span></a>
+</section>
+
+<section class="cards">
+<div class="card"><div class="visual" style="background-image:url('support.jpg')"></div><div class="copy"><h3>Персональное сопровождение</h3><div class="sub">Индивидуальный подход к вашему здоровью</div><p>Персональные рекомендации с учётом ваших целей, особенностей и ритма жизни.</p><a href="#">Узнать больше →</a></div><div class="go">→</div></div>
+<div class="card"><div class="visual" style="background-image:url('guides.jpg')"></div><div class="copy"><h3>Гайды и база знаний</h3><div class="sub">Полезные материалы для вашей реальной жизни</div><p>Практичные гайды, чек-листы и подборки о питании, привычках и образе жизни.</p><a href="#">Перейти к гайдам →</a></div><div class="go">→</div></div>
+<div class="card"><div class="visual" style="background-image:url('reviews.jpg')"></div><div class="copy"><h3>Отзывы</h3><div class="sub">Реальные истории и результаты</div><p>Истории клиентов — о сложностях, изменениях и достигнутых результатах.</p><a href="#">Читать отзывы →</a></div><div class="go">→</div></div>
+<div class="card"><div class="visual" style="background-image:url('contacts.jpg')"></div><div class="copy"><h3>Контакты</h3><div class="sub">Буду рада быть на связи!</div><p>Вопросы и запись на консультацию — удобным для вас способом.</p><a href="#">Написать мне →</a></div><div class="go">→</div></div>
+</section>
+
+<footer>
+<div>© 2026 Аня Константинова. Нутрициолог.</div>
+<div class="social"><span>Instagram</span><span>Telegram</span><span>WhatsApp</span><span>Email</span></div>
+</footer>
+</main>
+</body></html>
