@@ -21,6 +21,16 @@ h1{font-size:42px;line-height:1.05;color:var(--green);margin:0 0 24px;max-width:
 .hero-photo:before{content:"";position:absolute;z-index:1;inset:0 auto 0 0;width:17%;background:linear-gradient(90deg,var(--bg),rgba(248,245,238,0))}
 .hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 52%;transform:none}
 
+/* DESKTOP: clean split, without the blurred photo edge */
+@media(min-width:901px){
+.hero-inner{grid-template-columns:46% 54%;height:470px}
+.hero-copy{padding:30px 34px 30px 28px}
+.hero-photo:before{display:none}
+.hero-photo img{object-position:center 50%}
+.name{margin-bottom:48px}
+h1{font-size:40px}
+}
+
 /* ABOUT */
 section{padding-top:38px}h2{font-size:42px;color:var(--green);margin:0 0 14px}
 h3{font-size:28px;color:var(--green);margin:30px 0 8px}.about p{font-size:19px;margin:0 0 14px}
