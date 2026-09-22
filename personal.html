@@ -14,18 +14,13 @@ a{color:inherit}.wrap{max-width:1180px;margin:auto;padding:0 28px}
 .identity{display:flex;flex-direction:column}.role{font-size:16px}.name{font-size:25px;font-weight:700;color:var(--deep)}
 .back{text-decoration:none;color:var(--green);font-size:16px;font-weight:700;padding:10px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.45)}
 .hero{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:linear-gradient(120deg,#faf8f2 0%,#f2f1e8 56%,#e6ebde 100%)}
-.hero-inner{min-height:310px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:56px;padding-top:48px;padding-bottom:48px}
+.hero-inner{min-height:250px;display:flex;align-items:center;padding-top:48px;padding-bottom:48px}
 .eyebrow{font-size:16px;color:var(--green);font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin-bottom:12px}
 .page-title{font-size:48px;line-height:1.02;color:var(--green);margin:0 0 14px;white-space:nowrap}.lead{font-size:23px;line-height:1.25;max-width:640px;margin:0;color:#526267}
-.hero-note{background:rgba(251,250,246,.82);border:1px solid rgba(225,221,211,.8);border-radius:22px;padding:26px 28px;box-shadow:0 16px 40px rgba(38,73,66,.07)}
-.place{display:flex;gap:14px;align-items:flex-start;padding:10px 0}.place+.place{border-top:1px solid var(--line)}.place-icon{width:38px;height:38px;min-width:38px;border-radius:50%;display:grid;place-items:center;background:var(--soft);color:var(--green);font-size:19px}.place b{display:block;color:var(--deep);font-size:18px}.place span{color:var(--muted);font-size:16px}
-.intro{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:54px}.intro-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:25px 26px}.intro-card h2{font-size:26px;line-height:1.12;color:var(--green);margin:0 0 13px}.intro-card p{font-size:18px;margin:0}.intro-card p+p{margin-top:13px}
-section{padding-top:56px}h2{font-size:38px;line-height:1.08;color:var(--green);margin:0 0 12px}.section-lead{font-size:18px;margin:0 0 24px;color:var(--muted)}
-.hobby-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.hobby-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:23px 21px;min-height:340px}.hobby-number{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--soft);color:var(--green);font-size:18px;font-weight:700;margin-bottom:15px}.hobby-card h3{font-size:23px;line-height:1.15;color:var(--green);margin:0 0 13px}.hobby-card p{font-size:17px;line-height:1.5;margin:0}
-.trust{margin:56px 0 50px;padding:34px 38px;border-radius:22px;background:linear-gradient(120deg,#eef0e6,#e5ebe0);position:relative;overflow:hidden}.trust:after{content:"“";position:absolute;right:26px;top:-35px;font-family:Georgia,serif;font-size:170px;color:rgba(7,91,80,.08)}.trust p{position:relative;z-index:1;font-family:Georgia,serif;font-size:24px;line-height:1.45;font-style:italic;color:#274a46;max-width:900px;margin:0}.trust p+p{margin-top:10px}.trust strong{color:var(--green)}
+.personal-text{max-width:850px;margin:0 auto;padding:54px 0 50px}.personal-text p{font-size:19px;line-height:1.58;margin:0 0 20px}.personal-text p:last-child{margin-bottom:0}.personal-text strong{color:var(--green)}
 footer{border-top:1px solid var(--line);padding:26px 0 34px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.social{display:flex;gap:18px}
-@media(max-width:900px){.hero-inner{gap:28px}.hobby-grid{grid-template-columns:1fr}.hobby-card{min-height:0}.page-title{font-size:42px}}
-@media(max-width:720px){.wrap{padding:0 18px}.topbar{padding:16px 18px}.role{font-size:14px}.name{font-size:20px}.back{font-size:14px;padding:8px 11px}.hero-inner{grid-template-columns:1fr;gap:24px;min-height:0;padding-top:34px;padding-bottom:34px}.page-title{font-size:clamp(30px,8.5vw,37px)}.lead{font-size:20px}.hero-note{padding:18px 19px;border-radius:17px}.place{padding:9px 0}.place b{font-size:17px}.place span{font-size:15px}.intro{grid-template-columns:1fr;gap:14px;padding-top:36px}.intro-card{padding:20px 19px}.intro-card h2{font-size:23px}.intro-card p{font-size:17px}section{padding-top:42px}h2{font-size:30px}.section-lead{font-size:17px}.hobby-card{padding:20px 18px}.hobby-card h3{font-size:22px}.hobby-card p{font-size:16.5px}.trust{margin:42px 0 38px;padding:26px 22px}.trust p{font-size:20px}.trust:after{font-size:120px;right:10px;top:-28px}footer{font-size:14px}.social{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:10px 16px}}
+@media(max-width:900px){.page-title{font-size:42px}}
+@media(max-width:720px){.wrap{padding:0 18px}.topbar{padding:16px 18px}.role{font-size:14px}.name{font-size:20px}.back{font-size:14px;padding:8px 11px}.hero-inner{min-height:0;padding-top:34px;padding-bottom:34px}.page-title{font-size:clamp(30px,8.5vw,37px)}.lead{font-size:20px}.personal-text{padding:36px 0 38px}.personal-text p{font-size:17px;line-height:1.55;margin-bottom:17px}footer{font-size:14px}.social{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:10px 16px}}
 </style>
 </head>
 <body>
@@ -41,52 +36,27 @@ footer{border-top:1px solid var(--line);padding:26px 0 34px;display:flex;justify
       <h1 class="page-title">Немного личного</h1>
       <p class="lead">О жизни, увлечениях и том, что помогает мне оставаться собой</p>
     </div>
-    <div class="hero-note">
-      <div class="place"><div class="place-icon">⌖</div><div><b>Живу в Берлине</b><span>Лето провожу в Болгарии и часто бываю в Москве</span></div></div>
-      <div class="place"><div class="place-icon">♡</div><div><b>Очень счастлива замужем</b><span>И мечтаю о большущей собаке</span></div></div>
-    </div>
   </div>
 </header>
 
 <main class="wrap">
-  <div class="intro">
-    <article class="intro-card">
-      <h2>Постоянно учусь</h2>
-      <p>Совсем скоро — уже в следующем году — я получу степень в области <b>Mental Health</b>.</p>
-      <p>А пока меня всё чаще передают «из рук в руки» и рекомендуют как <b>anti-age специалиста</b>.</p>
-    </article>
-    <article class="intro-card">
-      <h2>То, что меня увлекает</h2>
-      <p>Помимо активного обучения и увлечения нутрициологией и нейробиологией, у меня есть и другие хобби.</p>
-    </article>
-  </div>
+  <article class="personal-text" id="hobbies">
+    <p>Я постоянно учусь. Совсем скоро — уже в следующем году — я получу степень в области <b>Mental Health</b>. А пока меня всё чаще передают «из рук в руки» и рекомендуют как <b>anti-age специалиста</b>.</p>
 
-  <section id="hobbies">
-    <h2>Мои увлечения</h2>
-    <p class="section-lead">Три направления, которым я с удовольствием посвящаю свободное время.</p>
-    <div class="hobby-grid">
-      <article class="hobby-card">
-        <div class="hobby-number">01</div>
-        <h3>Кулинарная медицина</h3>
-        <p>Я популяризатор кулинарной медицины и убеждена, что правильная домашняя пища — важный инструмент профилактики, контроля и лечения заболеваний. Я исследую, адаптирую и придумываю различные рецепты и меню и с радостью ими делюсь.</p>
-      </article>
-      <article class="hobby-card">
-        <div class="hobby-number">02</div>
-        <h3>Долгие прогулки</h3>
-        <p>Я много хожу пешком — с удовольствием. Еженедельно отправляюсь в короткие путешествия выходного дня, а несколько раз в год — в продолжительные трейлы. За моими плечами три Камино разной протяжённости.</p>
-      </article>
-      <article class="hobby-card">
-        <div class="hobby-number">03</div>
-        <h3>Психология и нутрициология</h3>
-        <p>Третье моё хобби — психология на стыке с нутрициологией. Кстати, а вы знаете, что выраженность некоторых нейроотличий может меняться при оптимизации гормонального фона, полноценном питании и правильно подобранных нутрицевтиках?</p>
-      </article>
-    </div>
-  </section>
+    <p>Сейчас я живу в Берлине, лето провожу в Болгарии и часто бываю в Москве. Я очень счастлива замужем и мечтаю о большущей собаке.</p>
 
-  <aside class="trust">
+    <p>Помимо активного обучения и увлечения нутрициологией и нейробиологией, у меня есть и другие хобби.</p>
+
+    <p>Во-первых, я популяризатор кулинарной медицины. Я убеждена, что правильная домашняя пища — важный инструмент профилактики, контроля и лечения заболеваний. Я исследую, адаптирую и придумываю различные рецепты и меню и с радостью ими делюсь.</p>
+
+    <p>Во-вторых, я много и с удовольствием хожу пешком. Еженедельно отправляюсь в короткие путешествия выходного дня, а несколько раз в год — в продолжительные трейлы. За моими плечами три Камино разной протяжённости.</p>
+
+    <p>Третье моё хобби — психология на стыке с нутрициологией. Кстати, а вы знаете, что выраженность некоторых нейроотличий может меняться при оптимизации гормонального фона, полноценном питании и правильно подобранных нутрицевтиках?</p>
+
     <p>Я уверена: выбирая специалиста для близкой совместной работы, хочется знать о нём больше. Чтобы доверять.</p>
+
     <p><strong>Ведь доверие — неотъемлемая часть нашей с вами совместной работы.</strong></p>
-  </aside>
+  </article>
 
   <footer>
     <div>© 2026 Аня Константинова. Нутрициолог.</div>
